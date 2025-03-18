@@ -102,7 +102,7 @@ To make your portfolio accessible online:
 This project is for personal use. Feel free to modify and distribute as needed.
 
 ## Contact
-For questions, reach out via the contact form on the deployed site or [your email/social media].
+For questions, reach out via the contact form on the deployed site or tonmoymukherjee31@gmail.com.
 
 ---
 
