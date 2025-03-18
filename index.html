@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tonmoy - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("7gCyhaZ6TZretd6ux");
+        })();
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">☰</div>
+        </div>
+    </nav>
+
+    <div class="background-animation">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <header id="home">
+        <div class="container">
+            <img src="./assets/Tonmoy -profile.jpeg" alt="Profile Picture" class="profile-img">
+            <h1>Your Name</h1>
+            <p class="tagline">Expert Web Developer | Crafting Digital Excellence</p>
+            <div class="social-links">
+                <a href="https://github.com/tonmoy-cpu" target="_blank" class="social-icon">GitHub</a>
+                <a href="https://www.linkedin.com/in/tonmoy-mukherjee-222673208/" target="_blank" class="social-icon">LinkedIn</a>
+                <a href="https://x.com/TonmoyMk0214" target="_blank" class="social-icon">Twitter</a>
+            </div>
+            <div id="datetime" class="datetime"></div>
+        </div>
+    </header>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>HireON</h3>
+                    <p>AI-Powered Hiring Platform built with Next.js and Node.js, featuring intelligent job and candidate analysis, resume extraction with scoring, and real-time chat between candidates and recruiters for seamless hiring.</p>
+                    <a href="https://github.com/tonmoy-cpu/Hiring-Platform" target="_blank" class="project-link">Explore Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>ChatBotX</h3>
+                    <p>ChatBotX - A smart chat application built with the MERN stack, featuring AI-powered conversations using GPT-3.5, enabling natural, context-aware interactions with users.</p>
+                    <a href="https://github.com/tonmoy-cpu/Chat-APP" target="_blank" class="project-link">Explore Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Advanced-to-do-list</h3>
+                    <p>A feature-rich task management app built with FastAPI and SQLite, offering categories, weather-based suggestions, calendar integration, reminders, priority settings, and a sleek user interface for efficient task handling.</p>
+                    <a href="https://github.com/tonmoy-cpu/to-do-list" target="_blank" class="project-link">Explore Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Advance-expense-tracker</h3>
+                    <p>A Next.js and MongoDB-powered app for efficient personal finance management, featuring transaction tracking, editing, deletion, monthly expense charts, responsive design, and error handling.</p>
+                    <a href="https://github.com/tonmoy-cpu/expense-tracker" target="_blank" class="project-link">Explore Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <form id="contact-form" class="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            <div id="form-status" class="form-status"></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
